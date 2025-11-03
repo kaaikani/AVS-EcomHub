@@ -1,0 +1,246 @@
+{
+  "categories": [
+    {
+      "id": "truly-unlimited",
+      "title": "TRULY UNLIMITED",
+      "features": [
+        "Unlimited Categories",
+        "Unlimited Products",
+        "Unlimited Users",
+        "Unlimited Orders",
+        "Unlimited Earnings"
+      ]
+    },
+    {
+      "id": "catalog-builder",
+      "title": "BEST-IN-CLASS CATALOG BUILDER",
+      "features": [
+        "Multi-Level Category",
+        "Rich Product description editor",
+        "Unlimited product variant values",
+        "Individual Product Tax settings",
+        "Inventory management",
+        "Handpick Related Product",
+        "Product Recommendations",
+        "Product weight and dimension",
+        "In-built bulk pricing",
+        "In-built customizable SEO",
+        "Product and variant level SEO",
+        "Bulk CSV upload",
+        "Bulk XML products",
+        "Dual image",
+        "Wishlist",
+        "Custom category slider",
+        "Select date slot/Time in the checkout page"
+      ]
+    },
+    {
+      "id": "advanced-seo",
+      "title": "ADVANCED SEO",
+      "features": [
+        "Global Meta Tags, meta image",
+        "SEO Validator",
+        "Custom URLs",
+        "Custom Preview image"
+      ]
+    },
+    {
+      "id": "logistics",
+      "title": "LOGISTICS",
+      "features": [
+        "Shipping Zone to control from a country to a pincode level",
+        "Multiple shipping methods from free to express delivery",
+        "Show or Hide COD option based on area",
+        "Allow product in specific Shipping Zones",
+        "Allow customer to check Pincode Serviceability",
+        "Choose from the top Courier Companies",
+        "Provision to add your delivery staff",
+        "Provision to allow self-pickup"
+      ]
+    },
+    {
+      "id": "full-access",
+      "title": "FULL ACCESS",
+      "features": [
+        "Custom domain integration",
+        "Enable multiple payment gateways",
+        "Own your Customer data",
+        "Own your Order data",
+        "Access to all premium themes",
+        "Abandoned Cart",
+        "Plugins Store",
+        "Support Email/Chat/Whatsapp"
+      ]
+    },
+    {
+      "id": "customer-management",
+      "title": "CUSTOMER MANAGEMENT",
+      "features": [
+        "Add customer",
+        "Import Customers",
+        "Search for customers with contact details",
+        "Control customer status and access",
+        "Filter Customers based on their purchase pattern",
+        "Create Customer Groups",
+        "Tag customers"
+      ]
+    },
+    {
+      "id": "marketing-growth",
+      "title": "MARKETING AND GROWTH",
+      "features": [
+        "Abandoned Cart Auto-Recovery",
+        "Inbuilt Email Marketing Tool",
+        "Email Subscription",
+        "Unlimited Offer Code",
+        "Customer Groups to create Offers",
+        "Product Groups to create offers",
+        "Facebook Pixel",
+        "Facebook Product Feed",
+        "Google Merchant Center",
+        "Sitemap Generator",
+        "Inbuilt Robots.txt for SEO",
+        "Google Analytics",
+        "Whatsapp Chat",
+        "Contact Enquiries",
+        "Review and Ratings",
+        "Customizable Unlimited Blogs",
+        "Social media links such as Instagram, Facebook, X (formerly Twitter), LinkedIn, and YouTube"
+      ]
+    },
+    {
+      "id": "store-customization",
+      "title": "STORE CUSTOMIZATION",
+      "features": [
+        "Add Logo",
+        "Add Favicon",
+        "Update images on the website",
+        "Customize Navigation (header and footer)",
+        "Handpick and showcase products and categories",
+        "Banners and content Customizations",
+        "Add Brand and Product Videos",
+        "Customizable About Us page",
+        "Contact Us page with correct details and form",
+        "Customize website color, font, size",
+        "Edit, show, or Hide Page Sections",
+        "Mobile optimized website",
+        "Coming Soon Page",
+        "Blogs",
+        "Add Custom HTML, CSS and JS",
+        "Remove Powered by Commerce",
+        "Drag and drop",
+        "Pop up",
+        "Cart Slider",
+        "Short description on Product details page",
+        "Recently viewed products",
+        "Banner option on Product page",
+        "Banner option on Category page",
+        "Banner option on Sub-Category page",
+        "Shoppable video on Home page",
+        "Desktop and Mobile Version Preview Option"
+      ]
+    },
+    {
+      "id": "order-management",
+      "title": "SUPERIOR ORDER MANAGEMENT AND POS",
+      "features": [
+        "Data-rich order page",
+        "Transaction details with id captured",
+        "Search and filter Orders with multiple options",
+        "Export orders with GST breakup",
+        "Add Order like a POS",
+        "Choose between Accept/Reject or Auto Accept Orders",
+        "Invoice generator with full or partial quantity with notes",
+        "Control order paid status for offline selling",
+        "Accept offline payments"
+      ]
+    },
+    {
+      "id": "payment-options",
+      "title": "PAYMENT OPTIONS",
+      "features": [
+        "Online Payment Gateways",
+        "Cash payment",
+        "NEFT/IMPS/RTGS",
+        "UPI",
+        "COD"
+      ]
+    },
+    {
+      "id": "privacy-security",
+      "title": "PRIVACY AND SECURITY",
+      "features": [
+        "Password Protection - Lock your store",
+        "Block Fake Customers",
+        "Advanced Permission Control for Staff Account",
+        "Staff with individual Login Details",
+        "Add Policies to Your Website",
+        "OTP for Both Email and Phone"
+      ]
+    },
+    {
+      "id": "notifications",
+      "title": "NOTIFICATIONS",
+      "features": [
+        "New Order",
+        "New Registration",
+        "Payment Received",
+        "Product out of stock",
+        "Product Low on stock",
+        "Automation updates"
+      ]
+    },
+    {
+      "id": "tax-compliant",
+      "title": "TAX COMPLIANT",
+      "features": [
+        "Billing Information",
+        "Add your business (GSTIN/CSTIN)",
+        "Global and individual tax settings",
+        "Add HSN/SAC codes"
+      ]
+    },
+    {
+      "id": "staff-management",
+      "title": "STAFF MANAGEMENT",
+      "features": [
+        "Advanced Permission Groups with 150+ permissions",
+        "Create Staff logins based on permission groups"
+      ]
+    },
+    {
+      "id": "checkout-customizations",
+      "title": "CHECKOUT CUSTOMISATIONS",
+      "features": [
+        "Allow users to create an account or set if optional",
+        "Enable or Disable Guest checkout",
+        "Customize fields for user details",
+        "Allow to choose between email, phone number or both",
+        "Allow users to log in via OTP or Password",
+        "Allow multiple shipping and billing addresses",
+        "Allow to add GST details or hide it",
+        "Allow to select from multiple shipping methods",
+        "Allow to see and select from the list of coupons",
+        "Show payment options as per logo"
+      ]
+    },
+    {
+      "id": "reports",
+      "title": "REPORTS",
+      "features": [
+        "Hourly Sale",
+        "Daily Sale",
+        "Monthly Sale",
+        "Yearly Sale",
+        "Sales by Customer",
+        "Sales by States",
+        "Sales by City",
+        "Sales by Pincode",
+        "Tax Collected",
+        "Orders fulfilled"
+      ]
+    }
+  ]
+}
+
+
