@@ -4,11 +4,12 @@ import { useState, useEffect, useRef } from "react"
 import { Menu, X, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname, useRouter } from "next/navigation"
 
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Services", href: "#ai-team" },
-  { name: "Features", href: "#testimonials" },
+  { name: "Features", href: "/features" },
   
 ]
 
@@ -17,6 +18,8 @@ export function GlassmorphismNav() {
   const [isVisible, setIsVisible] = useState(true)
   const [hasLoaded, setHasLoaded] = useState(false)
   const lastScrollY = useRef(0)
+  const pathname = usePathname()
+  const router = useRouter()
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -75,6 +78,51 @@ export function GlassmorphismNav() {
     }
 
     console.log("[v0] Attempting to scroll to:", href)
+    
+    // If we're not on the home page and the href is a hash link, navigate to home first
+    if (pathname !== "/" && href.startsWith("#")) {
+      console.log("[v0] Not on home page, navigating to home with hash:", href)
+      setIsOpen(false)
+      // Navigate to home page
+      router.push("/")
+      
+      // Wait for navigation and page to render, then scroll to the section
+      setTimeout(() => {
+        const element = document.querySelector(href)
+        if (element) {
+          const rect = element.getBoundingClientRect()
+          const currentScrollY = window.pageYOffset || document.documentElement.scrollTop
+          const elementAbsoluteTop = rect.top + currentScrollY
+          const navbarHeight = 100
+          const targetPosition = Math.max(0, elementAbsoluteTop - navbarHeight)
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: "smooth",
+          })
+        } else {
+          // Retry after a bit more time if element not found yet
+          setTimeout(() => {
+            const retryElement = document.querySelector(href)
+            if (retryElement) {
+              const rect = retryElement.getBoundingClientRect()
+              const currentScrollY = window.pageYOffset || document.documentElement.scrollTop
+              const elementAbsoluteTop = rect.top + currentScrollY
+              const navbarHeight = 100
+              const targetPosition = Math.max(0, elementAbsoluteTop - navbarHeight)
+
+              window.scrollTo({
+                top: targetPosition,
+                behavior: "smooth",
+              })
+            }
+          }, 300)
+        }
+      }, 600) // Wait for page transition
+      return
+    }
+
+    // If we're on the home page, scroll directly
     const element = document.querySelector(href)
     if (element) {
       console.log("[v0] Found element:", element)
@@ -132,12 +180,17 @@ export function GlassmorphismNav() {
 
               {/* Desktop Navigation */}
               <div className="hidden md:flex items-center space-x-8">
-                {navigation.map((item) =>
-                  item.href.startsWith("/") ? (
+                {navigation.map((item) => {
+                  const isActive = item.href.startsWith("/") && pathname === item.href
+                  return item.href.startsWith("/") ? (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="text-white/80 hover:text-white hover:scale-105 transition-all duration-200 font-medium cursor-pointer"
+                      className={`${
+                        isActive 
+                          ? "text-white bg-white/20 px-4 py-2 rounded-full" 
+                          : "text-white/80 hover:text-white"
+                      } hover:scale-105 transition-all duration-200 font-medium cursor-pointer`}
                     >
                       {item.name}
                     </Link>
@@ -149,8 +202,8 @@ export function GlassmorphismNav() {
                     >
                       {item.name}
                     </button>
-                  ),
-                )}
+                  )
+                })}
               </div>
 
               {/* Desktop CTA Button */}
@@ -206,12 +259,17 @@ export function GlassmorphismNav() {
           >
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-2xl">
               <div className="flex flex-col space-y-1">
-                {navigation.map((item, index) =>
-                  item.href.startsWith("/") ? (
+                {navigation.map((item, index) => {
+                  const isActive = item.href.startsWith("/") && pathname === item.href
+                  return item.href.startsWith("/") ? (
                     <Link
                       key={item.name}
                       href={item.href}
-                      className={`text-white/80 hover:text-white hover:bg-white/10 rounded-lg px-3 py-3 text-left transition-all duration-300 font-medium cursor-pointer transform hover:scale-[1.02] hover:translate-x-1 ${
+                      className={`${
+                        isActive 
+                          ? "text-white bg-white/20" 
+                          : "text-white/80 hover:text-white hover:bg-white/10"
+                      } rounded-lg px-3 py-3 text-left transition-all duration-300 font-medium cursor-pointer transform hover:scale-[1.02] hover:translate-x-1 ${
                         isOpen ? "animate-mobile-menu-item" : ""
                       }`}
                       style={{
@@ -234,8 +292,8 @@ export function GlassmorphismNav() {
                     >
                       {item.name}
                     </button>
-                  ),
-                )}
+                  )
+                })}
                 <div className="h-px bg-white/10 my-2" />
                 <button
                   className={`relative bg-white hover:bg-gray-50 text-black font-medium px-6 py-3 rounded-full flex items-center transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer group transform ${
