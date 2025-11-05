@@ -8,7 +8,7 @@ import { usePathname, useRouter } from "next/navigation"
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Services", href: "#ai-team" },
+  { name: "Services", href: "/services" },
   { name: "Features", href: "/features" },
   
 ]

@@ -80,9 +80,9 @@ export default function FeaturesPage() {
         {/* Main Content */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
           {/* Features Grid - Responsive Columns */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 items-start content-start">
             {/* Column 1 */}
-            <div className="space-y-6 sm:space-y-8">
+            <div className="space-y-6 sm:space-y-8 flex flex-col">
               {getColumnCategories(0).map((category, catIndex) => (
                 <div
                   key={category.id}
@@ -172,7 +172,7 @@ export default function FeaturesPage() {
             </div>
 
             {/* Column 2 */}
-            <div className="space-y-6 sm:space-y-8">
+            <div className="space-y-6 sm:space-y-8 flex flex-col">
               {getColumnCategories(1).map((category, catIndex) => (
                 <div
                   key={category.id}
@@ -258,7 +258,7 @@ export default function FeaturesPage() {
             </div>
 
             {/* Column 3 */}
-            <div className="space-y-6 sm:space-y-8">
+            <div className="space-y-6 sm:space-y-8 flex flex-col">
               {getColumnCategories(2).map((category, catIndex) => (
                 <div
                   key={category.id}
