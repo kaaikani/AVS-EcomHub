@@ -6,7 +6,8 @@
       "features": [
         "Unlimited Categories",
         "Unlimited Products",
-        "Unlimited Users",
+        "Unlimited Users ",
+        "Unlimited Users traffic",
         "Unlimited Orders",
         "Unlimited Earnings"
       ]
@@ -16,16 +17,13 @@
       "title": "BEST-IN-CLASS CATALOG BUILDER",
       "features": [
         "Multi-Level Category",
-        "Rich Product description editor",
+        "Rich Product description",
         "Unlimited product variant values",
         "Individual Product Tax settings",
         "Inventory management",
         "Handpick Related Product",
         "Product Recommendations",
         "Product weight and dimension",
-        "In-built bulk pricing",
-        "In-built customizable SEO",
-        "Product and variant level SEO",
         "Bulk CSV upload",
         "Bulk XML products",
         "Dual image",
@@ -34,27 +32,17 @@
         "Select date slot/Time in the checkout page"
       ]
     },
-    {
-      "id": "advanced-seo",
-      "title": "ADVANCED SEO",
-      "features": [
-        "Global Meta Tags, meta image",
-        "SEO Validator",
-        "Custom URLs",
-        "Custom Preview image"
-      ]
-    },
+  
     {
       "id": "logistics",
       "title": "LOGISTICS",
       "features": [
-        "Shipping Zone to control from a country to a pincode level",
+        "Shipping Zone to control from a country to a pin code level",
         "Multiple shipping methods from free to express delivery",
         "Show or Hide COD option based on area",
         "Allow product in specific Shipping Zones",
-        "Allow customer to check Pincode Serviceability",
+        "Allow customer to check Pin code Serviceability",
         "Choose from the top Courier Companies",
-        "Provision to add your delivery staff",
         "Provision to allow self-pickup"
       ]
     },
@@ -64,11 +52,9 @@
       "features": [
         "Custom domain integration",
         "Enable multiple payment gateways",
-        "Own your Customer data",
+        "Own your customer data",
         "Own your Order data",
-        "Access to all premium themes",
         "Abandoned Cart",
-        "Plugins Store",
         "Support Email/Chat/Whatsapp"
       ]
     },
@@ -81,8 +67,8 @@
         "Search for customers with contact details",
         "Control customer status and access",
         "Filter Customers based on their purchase pattern",
-        "Create Customer Groups",
-        "Tag customers"
+        "Create Customer Groups"
+
       ]
     },
     {
@@ -97,13 +83,10 @@
         "Product Groups to create offers",
         "Facebook Pixel",
         "Facebook Product Feed",
-        "Google Merchant Center",
         "Sitemap Generator",
-        "Inbuilt Robots.txt for SEO",
         "Google Analytics",
         "Whatsapp Chat",
         "Contact Enquiries",
-        "Review and Ratings",
         "Customizable Unlimited Blogs",
         "Social media links such as Instagram, Facebook, X (formerly Twitter), LinkedIn, and YouTube"
       ]
@@ -126,16 +109,11 @@
         "Mobile optimized website",
         "Coming Soon Page",
         "Blogs",
-        "Add Custom HTML, CSS and JS",
-        "Remove Powered by Commerce",
-        "Drag and drop",
+        "Remove Powered by Commerce+6",
         "Pop up",
         "Cart Slider",
         "Short description on Product details page",
         "Recently viewed products",
-        "Banner option on Product page",
-        "Banner option on Category page",
-        "Banner option on Sub-Category page",
         "Shoppable video on Home page",
         "Desktop and Mobile Version Preview Option"
       ]
@@ -160,8 +138,7 @@
       "title": "PAYMENT OPTIONS",
       "features": [
         "Online Payment Gateways",
-        "Cash payment",
-        "NEFT/IMPS/RTGS",
+        "Cards",
         "UPI",
         "COD"
       ]
@@ -171,7 +148,6 @@
       "title": "PRIVACY AND SECURITY",
       "features": [
         "Password Protection - Lock your store",
-        "Block Fake Customers",
         "Advanced Permission Control for Staff Account",
         "Staff with individual Login Details",
         "Add Policies to Your Website",
@@ -186,8 +162,7 @@
         "New Registration",
         "Payment Received",
         "Product out of stock",
-        "Product Low on stock",
-        "Automation updates"
+        "Product Low on stock"
       ]
     },
     {
@@ -228,15 +203,10 @@
       "id": "reports",
       "title": "REPORTS",
       "features": [
-        "Hourly Sale",
         "Daily Sale",
         "Monthly Sale",
         "Yearly Sale",
         "Sales by Customer",
-        "Sales by States",
-        "Sales by City",
-        "Sales by Pincode",
-        "Tax Collected",
         "Orders fulfilled"
       ]
     }
